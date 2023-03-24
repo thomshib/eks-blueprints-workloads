@@ -32,7 +32,7 @@ spec:
                 memory: "128Mi"
                 cpu: "500m"
       {{ if .Values.spec.karpenterInstanceProfile }}
-      nodeSelector: # <- add nodeselector, toleration and spread constraitns
+      nodeSelector: # <- add nodeselector, toleration and spread constraints
         team: default
         type: karpenter
       tolerations:
